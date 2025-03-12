@@ -9,4 +9,4 @@
 1024MB = 1GB
 1024GB = 1TB
 # 2.JDK的组成
- ![[JDK组成.png]]
+ ![](https://cdn.jsdelivr.net/gh/Leicha1/tuchuang/img/JDK%E7%BB%84%E6%88%90.png)
