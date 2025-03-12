@@ -63,7 +63,7 @@ public static int max(int a,int b){
 public static void print(int a){  
     System.out.println(a);  
 }  
-// 定义一个重载方法 打赢字符串  
+// 定义一个重载方法 打印字符串  
 public static void print(String str){  
     System.out.println(str);  
 }  
