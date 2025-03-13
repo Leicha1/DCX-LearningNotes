@@ -73,3 +73,26 @@ public static void print(int a, int b){
 }
 ```
 2. 无返回值的方法中，可以直接通过return，立即结束当前方法的执行；
+
+# 4.类型转换
+## 1 自动-强制类型转换
+1. 自动类型转换
+- 类型范围小的变量，可以直接赋值给类型范围大的变量
+ ![](https://raw.githubusercontent.com/Leicha1/tuchuang/main/img/20250313132536.png)
+2. 强制类型转换
+- 类型范围大的变量，不可以直接赋值给类型范围小的变量，需要进行强制类型转换
+![](https://raw.githubusercontent.com/Leicha1/tuchuang/main/img/20250313135609.png)
+注意：
+- 强制类型转换可能会出现数据溢出现象
+## 2 表达式的自动类型提升
+- 在表达式中，小范围类型的变量，会自动转换成表达式中较大范围的类型变量
+![](https://raw.githubusercontent.com/Leicha1/tuchuang/main/img/20250313140420.png)
+注意：
+- 表达式的最终结果类型由表达式中范围最大类型决定
+- ==在表达式中==，==byte、short、char==类型变量==直接转换为int==类型变量参与计算
+# 5.输入输出
+![](https://raw.githubusercontent.com/Leicha1/tuchuang/main/img/20250313143244.png)
+
+使用Scanner接收用户从键盘输入的数据，需要以下步骤：
+![](https://raw.githubusercontent.com/Leicha1/tuchuang/main/img/20250313143533.png)
+# 6.运算符
