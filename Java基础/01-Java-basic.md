@@ -96,3 +96,49 @@ public static void print(int a, int b){
 使用Scanner接收用户从键盘输入的数据，需要以下步骤：
 ![](https://raw.githubusercontent.com/Leicha1/tuchuang/main/img/20250313143533.png)
 # 6.运算符
+## 1算法运算符
+| 符号  | 作用  |
+| :-: | :-: |
+|  +  |  加  |
+|  -  |  减  |
+|  *  |  乘  |
+|  /  |  除  |
+|  %  | 取余  |
+- +符号在与字符串运算时用作连接符，其结果仍是字符串
+## 2 自增/自减运算符
+- ++ 自增运算符
+- --  自减运算符
+注意：
+![](https://raw.githubusercontent.com/Leicha1/tuchuang/main/img/20250314173130.png)
+## 3 赋值运算符
+1.基本赋值运算符 ‘=’ ，从右往左看
+	int a = 10；//把10赋值给变量a存储
+2.扩展赋值运算符
+![](https://raw.githubusercontent.com/Leicha1/tuchuang/main/img/20250314173817.png)
+注意：扩展赋值运算符隐含了强制类型转换
+## 4 关系运算符
+![](https://raw.githubusercontent.com/Leicha1/tuchuang/main/img/20250314174227.png)
+
+## 5 三元（三目）运算符
+- 格式：条件表达式 ? 值1 : 值2
+	表达式值为true返回值1，否则返回值2
+```
+public static void test2(int a,int b){  
+    int max = a > b ? a : b;  
+    System.out.println("较大值为：" + max);  
+}  
+public static void test2(int score){  
+    String result = score >= 60 ? "及格" : "不及格";  
+    System.out.println("成绩" + result);  
+}
+```
+## 6 逻辑运算符
+|  符号  | 作用  |   作用逻辑    |              例子               |
+| :--: | :-: | :-------: | :---------------------------: |
+|  &   | 按位与 | 全1出1，有0出0 |      1 & 1 = 1，* & 0 = 0      |
+|  \|  | 按位或 | 有1出1，全0出0 |     1 \| * = 1，0 \| 0 = 0     |
+|  !   |  非  |    取反     |       !(1) = 0，!(0) = 1       |
+|  ^   | 异或  | 相同为0，不同为1 | 1 ^ 1 = 0，0 ^ 0 = 0，1 ^ 0 = 1 |
+|  &&  | 逻辑与 |  与&结果一致   |        左边为false则右边不执行         |
+| \|\| | 逻辑或 |  与\|结果一致  |         左边为true则右边不执行         |
+
