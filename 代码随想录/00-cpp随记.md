@@ -44,3 +44,15 @@ cout << endl;
 ```
 - const auto &
 	在auto &的前面加上了const修饰，意味着它会获取一份集合中数据的引用，但是只可以被读取，不能被修改。
+# 库函数
+## warp（）
+```cpp
+//实现1
+int tmp = s[i];
+s[i] = s[j];
+s[j] = tmp;
+//实现2
+s[i] ^= s[j];
+s[j] ^= s[i];
+s[i] ^= s[j];
+```
