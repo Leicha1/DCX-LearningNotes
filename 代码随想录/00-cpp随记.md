@@ -87,3 +87,28 @@ s[i] ^= s[j];
 ### 6.set
 ### 7.map
 ### 8.list
+### 9.优先级队列：priority_queue
+构造：
+```cpp
+//默认构造大顶堆（堆头是最大元素）
+priority_queue<int,vector<int>> pq;
+
+//构造小顶堆需自行定义函数
+// 小顶堆构造一
+class mycomparison {
+    public:
+        bool operator()(const pair<int, int>& lhs, const pair<int, int>& rhs) {
+            return lhs.second > rhs.second;
+        }
+    };
+// 小顶堆构造二
+struct mycompare{
+        bool operator()(pair<int,int> &left,pair<int,int> &right){
+            return left.second > right.second;
+        }
+    };
+//小顶堆
+priority_queue<pair<int, int>, vector<pair<int, int>>, mycomparison> pri_que;
+priority_queue<pair<int, int>, vector<pair<int, int>>, mycompare> pri_que;
+```
+
