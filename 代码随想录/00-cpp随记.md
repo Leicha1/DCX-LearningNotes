@@ -44,7 +44,27 @@ cout << endl;
 ```
 - const auto &
 	在auto &的前面加上了const修饰，意味着它会获取一份集合中数据的引用，但是只可以被读取，不能被修改。
-# 库函数
+# 数据类型转换
+## **C++ 标准库转换函数**
+
+### (1) `std::to_string`（数值 → 字符串）
+```cpp
+int num = 123;
+std::string str = std::to_string(num);  // "123"
+```
+### (2) `std::stoi`, `std::stol`, `std::stod`,`std::stoll`（字符串 → 数值）
+```cpp
+std::string s = "3.14";
+double d = std::stod(s);  // 3.14
+```
+### (3) `std::from_chars`（C++17，高性能字符串 → 数值）
+```cpp
+#include <charconv>
+std::string s = "42";
+int num;
+std::from_chars(s.data(), s.data() + s.size(), num);  // num = 42
+```
+# 2.库函数
 ## warp（）
 ```cpp
 //实现1
@@ -56,3 +76,14 @@ s[i] ^= s[j];
 s[j] ^= s[i];
 s[i] ^= s[j];
 ```
+
+# 3.STL
+## 容器
+### 1.vector
+### 2.string
+### 3.stack
+### 4.queue
+### 5.deque
+### 6.set
+### 7.map
+### 8.list
